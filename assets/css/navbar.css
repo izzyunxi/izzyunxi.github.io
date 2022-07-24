@@ -4,3 +4,15 @@
   right: 50px;
   font-size: 20px;
 }
+.navbar-nav {
+  >li.nav-item {
+    >a {
+      font-family: 'Source Code Pro';
+      color: $gray-600;
+      font-size: 12px;
+      font-weight: normal;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+    }
+  }
+}

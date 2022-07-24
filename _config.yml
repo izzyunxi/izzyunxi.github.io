@@ -20,11 +20,10 @@
 
 title: NewGen Film Festival
 email: info@bngcff.com
-description: >- # this means to ignore newlines until "baseurl:"
-  New Generation Chinese Film Festival (NewGen) is a Berlin-based nonprofit
-  organization celebrating high-quality Chinese films with new and distinguished
-  filmmakers, film enthusiasts, film industry professionals, related-field scholars
-  and audiences around the world.
+tagline: "The film festival for young filmmakers"
+description: # this means to ignore newlines until "baseurl:"
+  en: New Generation Chinese Film Festival (NewGen) is a Berlin-based nonprofit organization celebrating high-quality Chinese films with new and distinguished filmmakers, film enthusiasts, film industry professionals, related-field scholars and audiences around the world.
+  zh: NewGen柏林华语电影节由一群年轻的欧洲电影人和电影爱好者发起，旨在发掘能代表华语电影未来的新一代电影人，鼓励独立新锐、展现多元华语文化和社会的电影创作。
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://bngcff.com" # the base hostname & protocol for your site, e.g. http://example.com
 # twitter_username:
@@ -62,7 +61,7 @@ collections:
     output:   true
 
 include: ['_pages']
-exclude: ['LICENSE.md', 'README.md', 'publi.sh', 'Gemfile.lock', 'Gemfile']
+exclude: ['LICENSE.md', 'README.md', 'public.sh', 'Gemfile.lock', 'Gemfile']
 
 languages: ["en", "zh", "de"]
 default_lang: "en"

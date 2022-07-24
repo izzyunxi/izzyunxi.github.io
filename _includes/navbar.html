@@ -1,0 +1,31 @@
+{% assign lang = site.active_lang %}
+<nav class="navbar-nav">
+  <div id="about">
+    <div class="row menu">
+      <input type="checkbox" id="hamburg">
+      <label for="hamburg" class="hamburg">
+        <span class="line"></span>
+        <span class="line"></span>
+        <span class="line"></span>
+        <ul class="hidden-menu">
+          <li> <a href="/home/" class="no-style">Home</a></li>
+          <li><a href="/about/" class="no-style">About us</a></li>
+          <li><a href="/submission/" class="no-style">Submission</a></li>
+          <!--li>Tickets</li-->
+          <!--li>Program</li-->
+          <li> <a href="/contact/" class="no-style">Contact</a></li>
+        </ul>
+      </label>
+    </div>
+    <div class="language-toggle">
+      <p>
+        <!-- jekyll-polyglot will process ferh= into href= through the static_href liquid block tag without relativizing the url; useful for making language navigation switchers  -->
+        {% for tongue in site.languages %}
+        <a {% if tongue==site.active_lang %}style="font-weight: bold;" {% endif %} {% static_href
+          %}href="{% if tongue == site.default_lang %}{{site.baseurl}}{{page.url}}{% else %}{{site.baseurl}}/{{ tongue }}{{page.url}}{% endif %}"
+          {% endstatic_href %}>{{ tongue }}</a>
+        {% endfor %}
+      </p>
+    </div>
+  </div>
+</nav>
